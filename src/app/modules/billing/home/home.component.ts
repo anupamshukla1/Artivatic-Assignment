@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BillingService } from 'src/app/services/billing.service';
-import * as XLSX from 'xlsx';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PagenotfoundComponent } from './modules/layout/pagenotfound/pagenotfound.component';
-// import { HomeComponent } from './modules/billing/home/home.component';
+
 
 const routes: Routes = [
   {path:'',redirectTo:'/account/login',pathMatch:'full'},

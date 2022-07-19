@@ -1,7 +1,6 @@
 
     <div class="container text-center">
       <h1 class="display-1">ALL BIILING RECORDS</h1>
-      <p class="lead">This is a all billing records.</p>
     </div>
 
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
@@ -33,5 +32,3 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-<mat-paginator [pageSizeOptions]="[8, 15,20,50,100]" showFirstLastButtons></mat-paginator>
- <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator> -->

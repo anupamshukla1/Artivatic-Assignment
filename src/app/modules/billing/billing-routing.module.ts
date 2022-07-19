@@ -3,15 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from 'src/app/guards/auth.guard';
 import { ViewbillComponent } from './viewbill/viewbill.component';
-// import { BillingpdfComponent } from './billingpdf/billingpdf.component';
-// import { HomeComponent } from './modules/billing/home/home.component';
+
 
 const routes: Routes = [
     {
         path: '',
         redirectTo: 'home', pathMatch: 'full'
     },
-    {path: 'home', component: HomeComponent},
+    {path: 'home', component: HomeComponent,canActivate:[AuthGuard]},
     {path:'viewbill',component:ViewbillComponent,canActivate:[AuthGuard]},
     
 ];
