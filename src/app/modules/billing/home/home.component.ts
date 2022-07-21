@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   billObj
   totalMonthlyRevenue:number=0
-  fileName= 'ExcelSheet.xlsx';
+  
   constructor(private billingservice:BillingService) { }
   ngOnInit(): void {
     this.geetingRevenue()
@@ -18,14 +18,14 @@ export class HomeComponent implements OnInit {
       this.billObj.forEach(element => {
         this.totalMonthlyRevenue+=element.grandTotal+(element.grandTotal*18)/100
       });
-      // console.log(this.totalMonthlyRevenue);
+      
     }, 500  );
   }
 
   async geetingRevenue(){
     this.billingservice.getAllBill().subscribe(info=>{
       this.billObj=info
-      // console.log(info);
+      
     })
     
   }
