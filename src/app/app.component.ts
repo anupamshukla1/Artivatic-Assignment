@@ -1,5 +1,5 @@
 import { Component,OnInit} from '@angular/core';
-// import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,5 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     
   }
-  title = 'RestaurantBillingApp';
+  title = 'BillingApp';
 }
