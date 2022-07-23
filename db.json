@@ -1,4 +1,11 @@
 {
+  "login": [
+    {
+      "username": "anupamshukla@gmail.com",
+      "password": "anupam123"
+    }
+  ],
+
   "posts": [
     {
       "id": 1,
@@ -19,7 +26,7 @@
       "billNo": "",
       "date": "2021-07-11",
       "address": "Ranchi",
-      
+
       "grandTotal": 930,
       "id": 2
     },
@@ -28,7 +35,7 @@
       "billNo": "",
       "date": "2021-07-07",
       "address": "kaurara road",
-      
+
       "grandTotal": 330,
       "id": 3
     },
@@ -37,7 +44,7 @@
       "billNo": "",
       "date": "2022-07-08",
       "address": "mumbai",
-      
+
       "grandTotal": 325,
       "id": 4
     },
@@ -46,7 +53,7 @@
       "billNo": "",
       "date": "2022-07-09",
       "address": "bulandshahr",
-      
+
       "grandTotal": 45,
       "id": 5
     },
@@ -55,7 +62,7 @@
       "billNo": "",
       "date": "2022-07-10",
       "address": "kaurara road",
-      
+
       "grandTotal": 180,
       "id": 6
     },
@@ -64,7 +71,7 @@
       "billNo": "",
       "date": "2022-07-13",
       "address": "ghaziabad",
-      
+
       "grandTotal": 558,
       "id": 7
     },
@@ -77,10 +84,8 @@
       "grandTotal": 0,
       "id": 8
     }
-    
-    
   ],
-  
+
   "profile": {
     "name": "typicode"
   }

@@ -22,13 +22,12 @@ export class LoginComponent implements OnInit {
         Validators.maxLength(25),
       ]),
     });
-    if (localStorage.getItem('username') != null) {
-      this.router.navigate(['../account/dashboard']);
-    }
+    
   }
-  onSubmit() {
+  async onSubmit() {
     console.log(this.loginReactiveForm);
-    this.result = this.loginservice.checkUser(this.loginReactiveForm);
+    let flag  = this.loginservice.checkUser(this.loginReactiveForm);
+    this.result = await flag
     if (this.result == true) {
       this.router.navigate(['../account/dashboard']);
     } else alert('user name and password are incorrect!!');
